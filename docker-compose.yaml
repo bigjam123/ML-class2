@@ -1,0 +1,12 @@
+
+services:
+  opm:
+    build:
+      dockerfile: ./Dockerfile
+    volumes:
+      - "./src:/opt/project/src"
+      - "./data:/opt/project/data"
+      - "./config:/opt/project/config"
+      - "./exmaples:/opt/project/exmaples"
+      - "./notebooks:/opt/project/notebooks"
+    tty: true
